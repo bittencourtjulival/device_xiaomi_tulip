@@ -590,7 +590,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_HOST_PACKAGES += \
     signapk
 
-# Soong
+# HARDWARE
+BOARD_USES_QCOM_HARDWARE := msm8998
+TARGET_BOARD_PLATFORM := msm8998
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := msm9898
+
+# HALS
+SRC_AUDIO_HAL_DIR := hardware/qcom-caf/msm8998/audio
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/msm8998/display
+SRC_MEDIA_HAL_DIR := hardware/qcom-caf/msm8998/media
+
+# Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
     hardware/google/interfaces \

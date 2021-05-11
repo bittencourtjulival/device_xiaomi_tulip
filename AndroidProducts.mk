@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bliss_tulip.mk
+    $(LOCAL_DIR)/spark_tulip.mk
 
 COMMON_LUNCH_CHOICES := \
-   bliss_tulip-user \
-   bliss_tulip-userdebug \
-   bliss_tulip-eng
+   spark_tulip-user \
+   spark_tulip-userdebug \
+   spark_tulip-eng
