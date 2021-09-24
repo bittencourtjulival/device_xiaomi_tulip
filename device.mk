@@ -586,11 +586,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_HOST_PACKAGES += \
     signapk
 
-# Soong
+# Board
+PRODUCT_BOARD_PLATFORM := sdm660
+PRODUCT_USES_QCOM_HARDWARE := true
+# Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(DEVICE_PATH) \
-    hardware/google/interfaces \
-    hardware/google/pixel
+     $(LOCAL_PATH) \
+         hardware/xiaomi\
+         hardware/google/interfaces \
+         hardware/google/pixel
 
 # Shims
 PRODUCT_PACKAGES += \
